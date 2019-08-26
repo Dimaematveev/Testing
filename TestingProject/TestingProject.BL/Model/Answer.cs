@@ -22,5 +22,11 @@ namespace TestingProject.BL.Model
         {
             QuestionText = questionText;
         }
+
+        public override bool Equals(object obj)
+        {
+            var another = (Answer)obj;
+            return QuestionText.Equals(another.QuestionText);
+        }
     }
 }
