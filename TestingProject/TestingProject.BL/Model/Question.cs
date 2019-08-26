@@ -43,6 +43,11 @@ namespace TestingProject.BL.Model
             
         }
 
+        /// <summary>
+        /// Проверяет что все правильные ответы есть во всех ответах.
+        /// </summary>
+        /// <param name="rightAnswers"></param>
+        /// <returns></returns>
         private bool CheckRightAnswer(List<Answer> rightAnswers)
         {
             foreach (var right in rightAnswers)

@@ -11,9 +11,16 @@ namespace TestingProject.BL.Model
     /// </summary>
     public class Answer
     {
+        
+
         /// <summary>
         /// Текст ответа.
         /// </summary>
         public string QuestionText { get; set; }
+
+        public Answer(string questionText)
+        {
+            QuestionText = questionText;
+        }
     }
 }
